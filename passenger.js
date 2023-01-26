@@ -52,7 +52,9 @@ function showTime(){
     let hours = currentTime.getHours();
     //get minutes
     let minutes = currentTime.getMinutes();
+    //get seconds
+    let secs = currentTime.getSeconds();
     //display time where id="displayTime"
-    document.getElementById("displayTime").innerHTML = hours + ":" + minutes;
+    document.getElementById("displayTime").innerHTML = hours + ":" + minutes + ":" + secs;
 
 }
