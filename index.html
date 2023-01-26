@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="passenger.css" />
-    <script src="passenger.js"></script>
+    
 </head>
-<body>
+<body onload="showDate(), showTime()">
     <!--Display for showing the number of people that have entered a transportation depot
     This diplay will be updated every time a person enters the depot, by a script in the  passenger.js file
      The display will also show the date and time    
 -->
     <div id="passenger-display">
-        <h1>Number of riders for <span id="dayNum"></span> <span id="month"></span> <span id="year"></span> as of <!--Display time here--> <span id="displayTime"></span></h1>
+        <h1>Number of riders for <span id="weekDay"></span> <span id="dayNum"></span> <span id="month"></span> <span id="year"></span> as of <!--Display time here--> <span id="displayTime"></span></h1>
         <h2 id="passenger-count">0</h2>
     </div>
     <!--Button for incrementing number of people entering the depot-->
     <button id="addPassenger" onclick="addPassenger()">Add Passenger</button>
     
 </body>
+<script src="passenger.js"></script>
 </html>
